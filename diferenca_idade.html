@@ -1,0 +1,36 @@
+<meta charset="UTF-8">
+<h1>Aulas dia 11 abril 2022</h1>
+
+<script>
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	alert("Fazer os execicios é a melhor parte");
+	var marceloIdade = 63;
+	var rogerioIdade = 60;
+
+	mostra ("nossa diferença de idade é : " + (marceloIdade - rogerioIdade));
+
+	
+	var periodoGeracao = 28;
+	var dataInicial = 1500;
+	var dataAtual = 2022;
+
+	mostra ("<br>"+ "Gerações basileiras :  " + Math.round((dataAtual-dataInicial)/28)); 
+
+	var idadeGeracao = 28;
+	var anoAtual = 2022;
+
+	var quantidadeDeGeracoes = (anoAtual- 1500)/idadeGeracao;
+
+	mostra("<br>" + "Quantidade de gerações : " + Math.round(quantidadeDeGeracoes));
+
+
+
+</script>

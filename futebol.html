@@ -1,0 +1,35 @@
+meta charset="UTF-8">
+<h1>Aulas dia 11 Abril 2022</h1>
+<h1> Estudando para aprender </h1>
+<h1> Exercicio  </h1>
+
+<script>
+
+	alert("Campeões dos campeões");
+	function pulaLinha() {
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var vitorias = parseInt(prompt("Entre numeros vitorias"));
+	var empates = parseInt(prompt("Entre numeros empates "));
+
+	var pontos = (vitorias  *  3) + empates;
+
+	mostra("Os pontos do seu time é : " + pontos);
+
+
+	if(pontos > 28){
+		mostra("Seu time está melhor do que ano passado");
+	}
+	if(pontos == 28){
+		mostra("Seu time está igual ano passado");
+	}
+	if(pontos < 28){
+		mostra("Seu time está pior que ano passado");
+	}
+	</script>

@@ -1,0 +1,82 @@
+<meta charset="UTF-8">
+<h1>Aulas dia 11 Abril 2022</h1>
+<h1> Exercicio IMC </h1>
+
+<script>
+
+	alert("Sempre aplicando o que aprende");
+	function puloLinha() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+		puloLinha();
+	}
+	alert("siga em frente !!");
+
+	function calculaImc(altura,peso){
+		var imc = Math.round(peso/(altura*altura));
+		mostra("O imc calculado é : " + imc)
+	}
+
+	calculaImc(1.76,85);
+	calculaImc(1.78,94);
+	
+	function calculaImc(altura,peso){
+		var imc = Math.round(peso/(altura*altura));
+		//mostra("O imc calculado é : " + imc)
+		return imc;
+	}
+
+	var imcAmigo = calculaImc(1.76,85);
+	var imcMarcelo = calculaImc(1.78,94);
+	 
+	 mostra("mostra imc amigo " + imcAmigo);
+	 mostra("mostra imc marcelo " + imcMarcelo);
+
+
+
+
+	function calculaImc(altura,peso){
+		return Math.round(peso/(altura*altura));
+		
+	}
+		var imcAmigo = calculaImc(1.76,85);
+		var imcMarcelo = calculaImc(1.78,94);
+	 	var totalImc = imcAmigo+imcMarcelo;
+	 	
+	 	var totalImc = calculaImc(1.76, 85)+calculaImc(1.78, 94);
+	 	mostra("A soma dos imc é : " + totalImc);
+
+	calculaImc(1.76,85);
+	calculaImc(1.78,94);
+	
+
+	function calculaImc(altura,peso) {
+		return Math.round(peso/(altura*altura));
+	}
+		var nome = prompt("Digite seu nome");
+		var alturaInformada = prompt("Digite sua altura");
+		var pesoInformado = prompt ("Digite se peso");
+
+		var imc = calculaImc(alturaInformada,pesoInformado);
+
+		mostra("<br>" +  nome + "<br>" +  " " + "   O seu imc calculado é : "  + imc);
+
+		if(imc < 18.5){
+				mostra("Você está abaixo do recomendado")
+		}
+		if(imc > 35){
+				mostra("Você está acima do recomendado");
+		}
+		if(imc>= 18.5){
+			if(imc>= 35){
+
+				mostra("Parabéns você está dentro do peso ");
+			}
+		}
+
+</script>

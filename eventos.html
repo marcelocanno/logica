@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<h1>Aulas dia 12 Abril 2022</h1>
+<h1>Login Média  </h1>
+<h1> Todo dia o novo </h1>
+
+<script>
+
+	function puloLinha() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+		puloLinha();
+	}
+
+
+	var totalDeEventos = parseInt(prompt("Digite a quantidade de eventos"));
+	
+	var contador = 1;
+
+	var totalGastoComEventos =0;	
+	while(contador <= totalDeEventos){
+
+		var gasto = parseFloat(prompt("Informe total gasto com evento"));
+		totalGastoComEventos = totalGastoComEventos + gasto;
+		contador+1;
+	
+	}
+	var media = totalGastoComEventos / totalDeEventos;
+	mostra("A média de gasto foi : " + media);
+
+
+	
+</script>

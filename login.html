@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<h1>Aulas dia 12 Abril 2022</h1>
+<h1>Login Alura  </h1>
+<h1> Todo dia o novo </h1>
+
+<script>
+
+	function puloLinha() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+		puloLinha();
+	}
+
+	var loginCadastrado = "alura";
+	var senhaCadastrada = "alura321"
+
+	var maximoTentativas = 3;
+	var tentativaAtual = 1;
+
+	while(tentativaAtual <= maximoTentativas){
+		
+		var loginInformado = prompt("Informe seu logim");
+		var senhaInformada = prompt("informe a sua senha");
+		if(loginCadastrado == loginInformado && senhaCadastrada == senhaInformada){
+			alert("bem vindo ao sistema");
+			tentativaAtual = maximoTentativas;
+		}else{
+			if(tentativaAtual == 3){
+				alert("Numero permitido de tentativas ultrapassado");
+			}else{
+				alert("login invalido tente novamente");
+			}
+		}
+		tentativaAtual = tentativaAtual +1;
+}
+</script>

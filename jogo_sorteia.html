@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<h1>Aulas dia 11 Abril 2022</h1>
+<h1>Aplicando exercicio  </h1>
+<h1> Todo dia o novo </h1>
+
+<script>
+
+	function puloLinha() {
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+
+	function mostra(frase){
+		document.write("<big>" + frase + "</big>");
+		puloLinha();
+	}
+	function sorteia(n){
+		return Math.round(Math.random() * n);
+	}
+	var numeroPensado = sorteia(10);
+	var chute = parseInt(prompt("Já pensei . Qual você acha que é ? "));
+
+	if (chute == numeroPensado){
+		mostra("Ual você acertou, pois eu pensei no " + numeroPensado);
+	}else{
+		if(chute > numeroPensado){
+		mostra("Você errou ! Seu chute é maior que o numero pensado   " + numeroPensado);
+	}else {
+		mostra("Você errou ! Seu chute é menor que o numero pensado   " + numeroPensado);
+	}
+	var limite = parseInt(prompt("Entre com seu limite"));
+	var anoCopa = 1930;
+
+	while (anoCopa <= limite){
+		mostra("Teve copa em : " + anoCopa);
+		anoCopa = anoCopa+4;
+	}
+	mostra("Fim");
+}
+</script>
